@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonidos Eternos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="imagenes/logo.png" sizes="16x16" type="image/png">
+</head>
+<body>
+    <header>
+        <div>
+            <p>Sonidos Eternos</p>
+        </div>
+        <div>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Categorias</a></li>
+                <li><a href="#">Sobre Mi</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="texto">
+            <h1>Blog de Musica Argentina</h1>
+            <p>Enterate de curiosidades del rock argentino, polemicas, mitos y mas</p>
+            <div class="botones">
+                <a href="#">Explorar articulos</a>
+                <a href="#">Suscribirse</a>
+            </div>
+        </div>
+        <div class="destacado">
+            <h2>Articulo destacado</h2>
+            <div class="vertodos">
+                <a href="#">Ver todos</a>
+            </div>
+        </div>
+        <div class="artdestacado">
+            <img src="imagenes/almendra.jpg" alt="Imagen de la banda Almendra">
+            <div class="contenido">
+                <div class="etiquetas">
+                    <span class="etiqueta">Historia</span>
+                </div>
+                <h3>La Revolución del Rock Argentino: De Almendra a Soda Stereo</h3>
+                <p>Un recorrido por las bandas fundamentales que definieron el sonido del rock nacional</p>
+                <div class="info">
+                    <p><i class="far fa-calendar"></i> 04/05/2025</p>
+                    <p><i class="far fa-clock"></i> 10mins</p>
+                </div>
+                <div class="autor">
+                    <img src="imagenes/yo1.jpg" alt="Imagen autor">
+                    <p>Bautista Aris</p>
+                </div>
+                <a class="leer-mas" href="#">Leer más</a>
+            </div>
+        </div>
+    </main>
+    <section class="articulos-recientes">
+        <div class="recientes">
+            <h3>Articulos recientes</h3>
+            <div class="artcaract">
+                <ul>
+                    <li><a href="#" class="active">Todos</a></li>
+                    <li><a href="#">Historia</a></li>
+                    <li><a href="#">Iconos</a></li>
+                    <li><a href="#">Controversias</a></li>
+                    <li><a href="#">Mitos</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="tarjetas">
+            <div class="tarjeta" data-category="historia">
+                <div class="imagen">
+                    <img src="imagenes/cancionanimal.jpg" alt="Imagen de album Canción Animal">
+                </div>
+                <div class="contenido">
+                    <div class="etiquetas">
+                        <span class="etiqueta">Historia</span>
+                    </div>
+                    <h3>10 Álbumes Claves que Definieron el Rock Argentino</h3>
+                    <p>Discos imprescindibles que marcaron el camino del rock en Argentina.</p>
+                    <div class="info">
+                        <p><i class="far fa-calendar"></i> 05/05/2025</p>
+                        <p><i class="far fa-clock"></i> 5mins</p>
+                    </div>
+                    <a href="#" class="leer-mas">Leer más</a>
+                </div>
+            </div>
+
+            <div class="tarjeta" data-category="iconos">
+                <div class="imagen">
+                    <img src="imagenes/cerati.jpeg" alt="Imagen de Gustavo Cerati">
+                </div>
+                <div class="contenido">
+                    <div class="etiquetas">
+                        <span class="etiqueta">Iconos</span>
+                        <span class="etiqueta">Leyendas</span>
+                    </div>
+                    <h3>Gustavo Cerati: El Arquitecto del Sonido Moderno</h3>
+                    <p>Su evolución de Soda Stereo a su carrera solista y su influencia en el sonid...</p>
+                    <div class="info">
+                        <p><i class="far fa-calendar"></i> 05/05/2025</p>
+                        <p><i class="far fa-clock"></i> 5mins</p>
+                    </div>
+                    <a href="#" class="leer-mas">Leer más</a>
+                </div>
+            </div>
+
+            <div class="tarjeta" data-category="iconos">
+                <div class="imagen">
+                    <img src="imagenes/charly.jpg" alt="Imagen de Charly García">
+                </div>
+                <div class="contenido">
+                    <div class="etiquetas">
+                        <span class="etiqueta">Iconos</span>
+                        <span class="etiqueta">Leyendas</span>
+                    </div>
+                    <h3>Charly García: Genio, Locura y Música Sin Fronteras</h3>
+                    <p>El impacto de su música y su rol como ícono del rock argentino.</p>
+                    <div class="info">
+                        <p><i class="far fa-calendar"></i> 05/05/2025</p>
+                        <p><i class="far fa-clock"></i> 5mins</p>
+                    </div>
+                    <a href="#" class="leer-mas">Leer más</a>
+                </div>
+            </div>
+
+            <div class="tarjeta" data-category="iconos">
+                <div class="imagen">
+                    <img src="imagenes/spinetta.jpg" alt="Imagen de Luis Alberto Spinetta">
+                </div>
+                <div class="contenido">
+                    <div class="etiquetas">
+                        <span class="etiqueta">Iconos</span>
+                        <span class="etiqueta">Leyendas</span>
+                    </div>
+                    <h3>Spinetta: Poesía y Mística en la Música</h3>
+                    <p>Cómo su lírica y su estilo marcaron un antes y un después en el rock.</p>
+                    <div class="info">
+                        <p><i class="far fa-calendar"></i> 05/05/2025</p>
+                        <p><i class="far fa-clock"></i> 5mins</p>
+                    </div>
+                    <a href="#" class="leer-mas">Leer más</a>
+                </div>
+            </div>
+
+            <div class="tarjeta" data-category="controversias">
+                <div class="imagen">
+                    <img src="imagenes/indio-cerati.jpg" alt="Imagen de Indio Solari y Gustavo Cerati">
+                </div>
+                <div class="contenido">
+                    <div class="etiquetas">
+                        <span class="etiqueta">Controversias</span>
+                        <span class="etiqueta">Mitos</span>
+                    </div>
+                    <h3>Soda Stereo vs. Los Redondos: La Rivalidad que Dividió al Rock.</h3>
+                    <p>El enfrentamiento entre los dos grupos más representativos de su época y sus dif...</p>
+                    <div class="info">
+                        <p><i class="far fa-calendar"></i> 05/05/2025</p>
+                        <p><i class="far fa-clock"></i> 5mins</p>
+                    </div>
+                    <a href="#" class="leer-mas">Leer más</a>
+                </div>
+            </div>
+
+            <div class="tarjeta"  data-category="mitos">
+                <div class="imagen">
+                    <img src="imagenes/modrenclix.jpg" alt="Imagen de Clics Modernos">
+                </div>
+                <div class="contenido">
+                    <div class="etiquetas">
+                        <span class="etiqueta">Mitos</span>
+                    </div>
+                    <h3>Significados Ocultos en las Canciones del Rock Nacional</h3>
+                    <p>Análisis de las canciones que escondían mensajes y metáforas profundas.</p>
+                    <div class="info">
+                        <p><i class="far fa-calendar"></i> 05/05/2025</p>
+                        <p><i class="far fa-clock"></i> 5mins</p>
+                    </div>
+                    <a href="#" class="leer-mas">Leer más</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="newsletter">
+            <i class="fas fa-envelope"></i>
+            <h4>Suscribite a nuestro Newsletter</h4>
+            <p>Recibe los últimos artículos y actualizaciones directamente en tu bandeja de entrada.</p>
+            <form action="#" method="post">
+                <input type="email" placeholder="Tu correo electrónico" required>
+                <button type="submit">Suscribirse</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Sonidos Eternos</h4>
+                <p>Un blog sobre música argentina, curiosidades, polémicas y más.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Enlaces</h4>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Categorías</a></li>
+                    <li><a href="#">Sobre Mí</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Categorías</h4>
+                <ul>
+                    <li><a href="#">Historia</a></li>
+                    <li><a href="#">Iconos</a></li>
+                    <li><a href="#">Controversias</a></li>
+                    <li><a href="#">Mitos</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Redes Sociales</h4>
+                <ul>
+                    <li><a href="#"><i class="fab fa-github"></i> Github</a></li>
+                    <li><a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Sonidos Eternos. Todos los derechos reservados.</p>
+            <p>Diseñado por Bautista Aris</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
