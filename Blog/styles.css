@@ -1,13 +1,15 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: #e6f7ff;
+    color: #333;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color: #004080;
     color: #fff;
 }
 
@@ -32,15 +34,14 @@ header ul li a {
     display: inline-block;
     color: #fff;
     text-decoration: none;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
 header ul li a:hover {
-    color: #f00;
+    color: #66b3ff;
     text-decoration: underline;
     transform: scale(1.1);
 }
-
 
 .texto {
     display: flex;
@@ -50,7 +51,7 @@ header ul li a:hover {
     height: 50vh;
     width: 90vw;
     text-align: center;
-    background-color: #e8e5e5;
+    background-color: #cceeff;
     margin: 40px auto;
     border-radius: 15px;
 }
@@ -58,15 +59,17 @@ header ul li a:hover {
 .texto h1 {
     font-family: "Inter", sans-serif;
     font-size: 50px;
+    color: #004080;
 }
 
 .texto p {
     font-family: "Inter", sans-serif;
     font-size: 20px;
     margin-top: 0;
+    color: #003366;
 }
 
-.botones{
+.botones {
     text-align: center;
     width: 100%;
 }
@@ -79,17 +82,18 @@ header ul li a:hover {
     margin: 20px 40px;
     text-decoration: none;
     border-radius: 10px;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .botones a:nth-child(1) {
-    background-color: #000000;
+    background-color: #004080;
     color: #ffffff;
 }
 
 .botones a:nth-child(2) {
     background-color: #ffffff;
-    color: #000000;
+    color: #004080;
+    border: 2px solid #004080;
 }
 
 .botones a:hover {
@@ -105,9 +109,10 @@ header ul li a:hover {
     margin: 0 auto;
 }
 
-.destacado h2{
+.destacado h2 {
     font-family: "Inter", sans-serif;
     font-size: 30px;
+    color: #004080;
 }
 
 .vertodos a {
@@ -115,13 +120,14 @@ header ul li a:hover {
     font-family: "Inter", sans-serif;
     font-size: 15px;
     text-decoration: none;
-    color: #333;
-    transition: transform 0.3s ease;
+    color: #004080;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .destacado .vertodos a:hover {
     transform: scale(1.05);
     text-decoration: underline;
+    color: #66b3ff;
 }
 
 .artdestacado {
@@ -130,7 +136,7 @@ header ul li a:hover {
     margin: 0 auto;
     width: 90vw;
     height: 40vh;
-    background-color: #e8e5e5;
+    background-color: #ffffff;
     padding: 20px;
     border-radius: 15px;
 }
@@ -144,7 +150,7 @@ header ul li a:hover {
 .contenido {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;  
+    justify-content: flex-start;
     width: 60%;
 }
 
@@ -156,27 +162,30 @@ header ul li a:hover {
 }
 
 .etiqueta {
-    display: inline-block; 
-    background-color: #cdcdcd;
+    display: inline-block;
+    background-color: #66b3ff;
+    color: #fff;
     padding: 5px 12px;
     border-radius: 50px;
     font-family: "Inter", sans-serif;
     font-size: 16px;
     font-weight: bold;
     margin-bottom: 10px;
-    width: fit-content;             
+    width: fit-content;
 }
 
 .artdestacado h3 {
     font-family: "Inter", sans-serif;
     font-size: 24px;
     margin-top: 0;
+    color: #004080;
 }
 
 .artdestacado p {
     font-family: "Inter", sans-serif;
     font-size: 16px;
     margin-top: 10px;
+    color: #003366;
 }
 
 .info {
@@ -184,12 +193,8 @@ header ul li a:hover {
     gap: 20px;
     width: 100%;
     margin-top: 20px;
-}
-
-.info p {
-    margin: 0;
     font-size: 14px;
-    color: #666;
+    color: #003366;
 }
 
 .autor {
@@ -209,17 +214,17 @@ header ul li a:hover {
     align-self: flex-end;
     font-family: "Inter", sans-serif;
     font-size: 16px;
-    color: #333;
+    color: #004080;
     text-decoration: none;
     padding: 10px 20px;
     background-color: #fff;
     border-radius: 5px;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .leer-mas:hover {
     transform: scale(1.05);
-    background-color: #f0f0f0;
+    background-color: #cceeff;
 }
 
 .articulos-recientes {
@@ -236,7 +241,7 @@ header ul li a:hover {
     margin: 0 auto;
 }
 
-.recientes h3{
+.recientes h3 {
     font-family: "Inter", sans-serif;
     font-size: 30px;
 }
@@ -257,7 +262,7 @@ header ul li a:hover {
     padding: 10px;
     text-decoration: none;
     color: #333;
-    transition: transform 0.3s ease; 
+    transition: transform 0.3s ease;
 }
 
 .artcaract a:hover {
@@ -285,7 +290,6 @@ header ul li a:hover {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-
 }
 
 .tarjeta .imagen {
@@ -353,7 +357,7 @@ header ul li a:hover {
     height: 50vh;
     width: 90vw;
     text-align: center;
-    background-color: #e8e5e5;
+    background-color: #cceeff;
     margin: 0 auto;
     margin-top: 5vh;
     border-radius: 15px;
@@ -361,23 +365,26 @@ header ul li a:hover {
 
 .newsletter i {
     font-size: 50px;
+    color: #004080;
 }
 
 .newsletter h4 {
     font-family: "Inter", sans-serif;
     font-size: 50px;
+    color: #004080;
 }
 
 .newsletter p {
     font-family: "Inter", sans-serif;
     font-size: 20px;
     margin-top: 0;
+    color: #003366;
 }
 
 .newsletter input[type="email"] {
     width: 300px;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #004080;
     border-radius: 5px;
     font-size: 16px;
     margin-bottom: 20px;
@@ -385,7 +392,7 @@ header ul li a:hover {
 
 .newsletter button {
     font-family: "Inter", sans-serif;
-    background-color: #1e293b;
+    background-color: #004080;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -400,13 +407,13 @@ header ul li a:hover {
 }
 
 footer {
-    background-color: #f8f9fa;
+    background-color: #cceeff;
     margin: 0 auto;
     margin-top: 5vh;
     width: 90vw;
     border-radius: 15px;
     padding: 40px 20px;
-    color: #333;
+    color: #003366;
     font-family: "Inter", sans-serif;
 }
 
@@ -420,7 +427,7 @@ footer {
 }
 
 .footer-section {
-    flex: 1 1 200px; 
+    flex: 1 1 200px;
     min-width: 200px;
 }
 
@@ -428,6 +435,7 @@ footer {
     font-size: 18px;
     margin-bottom: 10px;
     font-weight: bold;
+    color: #004080;
 }
 
 .footer-section p {
@@ -446,21 +454,21 @@ footer {
 }
 
 .footer-section ul li a {
-    text-decoration: none;
     color: #666;
+    text-decoration: none;
     font-size: 14px;
     transition: color 0.3s ease;
 }
 
 .footer-section ul li a:hover {
-    color: #666;
+    color: #004080;
 }
 
 .footer-bottom {
     text-align: center;
     margin-top: 20px;
     font-size: 14px;
-    color: #666;
+    color: #003366;
     border-top: 1px solid #ddd;
     padding-top: 10px;
 }
@@ -471,12 +479,12 @@ footer {
 
 @media (max-width: 900px) {
     .tarjetas {
-        grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas medianas */
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 600px) {
     .tarjetas {
-        grid-template-columns: 1fr; /* 1 columna en pantallas pequeñas */
+        grid-template-columns: 1fr;
     }
 }
