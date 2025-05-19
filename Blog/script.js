@@ -34,6 +34,13 @@ document.addEventListener("DOMContentLoaded", () => {
         burger.classList.toggle('active');
     });
 
+    document.querySelectorAll('.nav-links ul li a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+            burger.classList.remove('active');
+        });
+    });
+
     const artcaractToggle = document.getElementById('artcaractToggle');
     const artcaractUl = document.querySelector('.artcaract ul');
 
