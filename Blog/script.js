@@ -25,4 +25,21 @@ document.addEventListener("DOMContentLoaded", () => {
             e.target.classList.add("active");
         });
     });
+
+    const burger = document.getElementById('burger');
+    const navLinks = document.getElementById('navLinks');
+
+    burger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        burger.classList.toggle('active');
+    });
+
+    const artcaractToggle = document.getElementById('artcaractToggle');
+    const artcaractUl = document.querySelector('.artcaract ul');
+
+    if (artcaractToggle && artcaractUl) {
+        artcaractToggle.addEventListener('click', () => {
+            artcaractUl.classList.toggle('active');
+        });
+    }
 });

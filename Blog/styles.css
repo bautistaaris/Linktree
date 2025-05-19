@@ -43,6 +43,37 @@ header ul li a:hover {
     transform: scale(1.1);
 }
 
+.burger {
+    display: none;
+    width: 32px;
+    height: 32px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 2001;
+    position: relative;
+    margin-right: 20px;
+    gap: 6px;
+    background: none;
+    border: none;
+}
+
+.burger span {
+    display: block;
+    width: 28px;
+    height: 4px;
+    background: #004080;
+    border-radius: 2px;
+    transition: all 0.3s cubic-bezier(.4,2,.6,1);
+    position: relative;
+}
+
+.burger i{
+    font-size: 2rem;
+    color: #ffffff;
+}
+
 .texto {
     display: flex;
     flex-direction: column;
@@ -252,11 +283,10 @@ header ul li a:hover {
     list-style: none;
     font-size: 20px;
     gap: 30px;
-    margin-left: auto;
 }
 
 .artcaract a {
-    display: inline-block;
+    display: block;
     font-family: "Inter", sans-serif;
     font-size: 15px;
     padding: 10px;
@@ -477,14 +507,147 @@ footer {
     margin: 5px 0;
 }
 
-@media (max-width: 900px) {
-    .tarjetas {
-        grid-template-columns: repeat(2, 1fr);
-    }
+.artcaract-toggle {
+    display: none;
+    background: #004080;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 18px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    cursor: pointer;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 767px) {
+    .nav-links ul {
+        display: block;
+        flex-direction: column;
+        background: #cceeff;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 70vw;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        border-radius: 0 0 0 15px;
+        z-index: 100;
+    }
+
+    .nav-links.active ul {
+        display: flex;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .burger span {
+        background-color: #ffffff;
+        transition: all 0.3s cubic-bezier(.4,2,.6,1);
+    }
+    
+    .burger.active span:nth-child(1) {
+        transform: translateY(10px) rotate(45deg);
+    }
+    .burger.active span:nth-child(2) {
+        opacity: 0;
+    }
+    .burger.active span:nth-child(3) {
+        transform: translateY(-10px) rotate(-45deg);
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100vw;
+        width: 100vw;
+        height: 100vh;
+        background: #cceeff;
+        box-shadow: -2px 0 8px rgba(0,0,0,0.1);
+        border-radius: 0 0 0 15px;
+        z-index: 2000;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 60px;
+        transition: right 0.3s ease;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .nav-links ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-left: 0;
+        margin: 0;
+    }
+
+    .nav-links ul li {
+        width: 100%;
+        text-align: left;
+        padding: 20px 30px;
+        border-bottom: 1px solid #b3e0ff;
+    }
+
+    .nav-links ul li a {
+        color: #004080;
+        font-size: 1.2rem;
+        width: 100%;
+        display: block;
+    }
+
+    .nav-links.active {
+        right: 100;
+    }
+
     .tarjetas {
         grid-template-columns: 1fr;
     }
+
+    .artdestacado {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 15px;
+        width: 98vw;
+        margin: 0 auto 20px auto;
+    }
+    .artdestacado img {
+        width: 90vw;
+        max-width: 400px;
+        height: auto;
+        margin-bottom: 15px;
+    }
+    .contenido {
+        width: 100%;
+        padding: 0;
+        align-items: flex-start;
+    }
+    .artdestacado h3 {
+        font-size: 1.3rem;
+    }
+    .artdestacado p {
+        font-size: 1rem;
+    }
+
+    .artcaract-toggle {
+        display: block;
+    }
+
+    .artcaract ul {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        background: #cceeff;
+        border-radius: 15px;
+        padding: 10px 0;
+        margin: 0;
+    }
+    .artcaract ul.active {
+        display: flex;
+    }
 }
+
