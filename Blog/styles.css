@@ -243,7 +243,7 @@ header {
     border-radius: 50%;
 }
 
-.leer-mas {
+.artdestacado .leer-mas {
     align-self: center;
     font-family: "Inter", sans-serif;
     font-size: 16px;
@@ -252,15 +252,11 @@ header {
     padding: 10px 20px;
     margin-top: auto;
     margin-left: auto;
-    background-color: #fff;
+    background-color: #f0f0f0;
     border-radius: 5px;
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.leer-mas:hover {
-    transform: scale(1.05);
-    background-color: #cceeff;
-}
 
 .articulos-recientes {
     width: 90%;
@@ -366,8 +362,10 @@ header {
     color: #999;
 }
 
-.leer-mas {
-    align-self: flex-start;
+.tarjeta .leer-mas {
+    align-self: center;
+    margin-right: auto;
+    margin-top: auto;
     font-family: "Inter", sans-serif;
     font-size: 14px;
     color: #333;
@@ -522,6 +520,113 @@ footer {
     font-size: 1rem;
     margin-bottom: 10px;
     cursor: pointer;
+}
+
+.articulo-detalle {
+    width: 80vw;
+    margin: 40px auto 30px auto;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,64,128,0.07);
+    padding: 32px 24px;
+}
+
+.articulo-detalle .titulo {
+    font-size: 2.1rem;
+    color: #004080;
+    margin-bottom: 18px;
+    font-weight: 700;
+    line-height: 1.15;
+    font-family: 'Outfit', sans-serif;
+}
+
+.info-articulo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    align-items: center;
+    font-size: 1rem;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.info-articulo .autor {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+}
+
+.imagen-principal img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 2px 12px rgba(0,64,128,0.06);
+}
+
+.cuerpo-articulo {
+    margin-top: 30px;
+}
+
+.cuerpo-articulo h2 {
+    font-size: 1.3rem;
+    color: #004080;
+    margin-top: 28px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-family: 'Outfit', sans-serif;
+}
+
+.cuerpo-articulo p {
+    font-size: 1.08rem;
+    color: #222;
+    margin-bottom: 16px;
+    line-height: 1.7;
+}
+
+.cuerpo-articulo ul {
+    margin: 16px 0 16px 24px;
+    padding: 0;
+    color: #004080;
+}
+
+.cuerpo-articulo li {
+    margin-bottom: 8px;
+    font-size: 1.05rem;
+}
+
+.cuerpo-articulo blockquote {
+    border-left: 4px solid #66b3ff;
+    background: #f3faff;
+    color: #004080;
+    margin: 18px 0;
+    padding: 14px 22px;
+    font-style: italic;
+    border-radius: 8px;
+}
+
+.boton-volver {
+    text-align: left;
+    margin-top: 40px;
+}
+
+.boton-volver a {
+    font-family: "Inter", sans-serif;
+    color: #004080;
+    background: #e6f3ff;
+    padding: 10px 22px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background 0.2s, color 0.2s;
+}
+
+.boton-volver a:hover {
+    background: #66b3ff;
+    color: #fff;
 }
 
 @media (max-width: 767px) {
