@@ -1,9 +1,10 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #181818;
     color: #fff2f2;
     cursor: none;
+    background-image: url('/Linktree/Blog/imagenes/fondorock.avif');
+    
 }
 
 #cursor {
@@ -27,8 +28,8 @@ header {
 
 .logo a {
     font-family: "Inter", sans-serif;
-    font-size: 30px;
     color: #e60026;
+    font-size: 30px;
     font-weight: bold;
     margin-left: 20px;
     text-decoration: none;
@@ -173,6 +174,9 @@ header {
     color: #e60026;
     transition: transform 0.3s, color 0.3s;
     font-weight: bold;
+    background-color: #22212c;
+    padding: 10px 20px;
+    border-radius: 8px;
 }
 
 .destacado .vertodos a:hover {
@@ -310,6 +314,9 @@ header {
     list-style: none;
     font-size: 20px;
     gap: 30px;
+    background-color: #22212c;
+    padding: 10px 20px;
+    border-radius: 15px;
 }
 
 .artcaract a {
@@ -557,7 +564,6 @@ footer {
 }
 
 .articulo-detalle {
-    width: 80vw;
     margin: 40px auto 30px auto;
     background: #22212c;
     border-radius: 18px;
@@ -567,7 +573,7 @@ footer {
 }
 
 .articulo-detalle .titulo {
-    font-size: 2.1rem;
+    font-size: 3rem;
     color: #e60026;
     margin-bottom: 18px;
     font-weight: 700;
@@ -606,7 +612,7 @@ footer {
 }
 
 .cuerpo-articulo h2 {
-    font-size: 1.3rem;
+    font-size: 2rem;
     color: #e60026;
     margin-top: 28px;
     margin-bottom: 10px;
@@ -615,7 +621,7 @@ footer {
 }
 
 .cuerpo-articulo p {
-    font-size: 1.08rem;
+    font-size: 1.5rem;
     color: #fff2f2;
     margin-bottom: 16px;
     line-height: 1.7;
@@ -629,7 +635,7 @@ footer {
 
 .cuerpo-articulo li {
     margin-bottom: 8px;
-    font-size: 1.05rem;
+    font-size: 1.2rem;
 }
 
 .cuerpo-articulo blockquote {
@@ -639,6 +645,7 @@ footer {
     margin: 18px 0;
     padding: 14px 22px;
     font-style: italic;
+    font-size: 1.2rem;
     border-radius: 8px;
 }
 
@@ -667,6 +674,12 @@ footer {
 
 button, a, input, textarea, select {
     cursor: none !important;
+}
+
+@media (min-width: 767px) {
+    .articulo-detalle {
+        width: 50vw;
+    }
 }
 
 @media (max-width: 767px) {
@@ -809,6 +822,10 @@ button, a, input, textarea, select {
     }
     .artcaract ul.active {
         display: flex;
+    }
+
+    .articulo-detalle {
+        width: 80vw;
     }
 }
 
