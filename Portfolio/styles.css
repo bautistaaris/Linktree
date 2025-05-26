@@ -18,7 +18,7 @@ header {
     color: #ffffff;
 }
 
-.logo span { 
+.logo strong { 
     color: #68d9ff; 
 }
 
@@ -63,7 +63,7 @@ nav ul li a:hover {
     margin: 0 0 18px 0;
 }
 
-.inicioinfo .azul { 
+.inicioinfo strong { 
     color: #68d9ff; 
 }
 
@@ -161,7 +161,7 @@ nav ul li a:hover {
     color: #eaeaea;
 }
 
-.sobremi-titulo {
+.titulo {
     text-align: center;
     font-size: 3.5rem;
     color: #fff;
@@ -171,12 +171,12 @@ nav ul li a:hover {
     letter-spacing: 1px;
 }
 
-.sobremi-subtitulo-wrap {
+.subtitulo {
     text-align: center;
     width: 100%;
 }
 
-.sobremi-subtitulo {
+.subtitulo p {
     display: inline-block;
     color: #b3c6e0;
     font-size: 1.35rem;
@@ -186,8 +186,8 @@ nav ul li a:hover {
     position: relative;
 }
 
-.sobremi-subtitulo::before,
-.sobremi-subtitulo::after {
+.subtitulo::before,
+.subtitulo::after {
     content: "";
     display: inline-block;
     vertical-align: middle;
@@ -198,7 +198,7 @@ nav ul li a:hover {
     margin: 0 18px;
 }
 
-.sobremi-contenido {
+.contenido {
     display: flex;
     gap: 64px;
     align-items: flex-start;
@@ -206,7 +206,7 @@ nav ul li a:hover {
     flex-wrap: wrap;
 }
 
-.sobremi-foto {
+.foto {
     background: #232e41;
     border-radius: 18px;
     padding: 40px 32px 32px 32px;
@@ -218,7 +218,7 @@ nav ul li a:hover {
     box-shadow: 0 4px 24px rgba(0,64,128,0.07);
 }
 
-.sobremi-foto img {
+.foto img {
     width: 400px;
     height: 400px;
     border-radius: 18px;
@@ -228,11 +228,11 @@ nav ul li a:hover {
     background: #eaeaea;
 }
 
-.sobremi-datos {
+.datos {
     text-align: center;
 }
 
-.sobremi-datos h3 {
+.datos h3 {
     margin: 0 0 10px 0;
     color: #fff;
     font-size: 1.5rem;
@@ -240,14 +240,14 @@ nav ul li a:hover {
     font-weight: 700;
 }
 
-.sobremi-datos .rol {
+.rol {
     color: #68d9ff;
     font-size: 1.15rem;
     margin-bottom: 14px;
     font-weight: 600;
 }
 
-.sobremi-datos .dato {
+.dato {
     color: #b3c6e0;
     font-size: 1.08rem;
     margin: 8px 0;
@@ -257,12 +257,12 @@ nav ul li a:hover {
     justify-content: center;
 }
 
-.sobremi-texto {
+.texto {
     flex: 1 1 420px;
     max-width: 700px;
 }
 
-.sobremi-texto h3 {
+.texto h3 {
     font-size: 2.1rem;
     color: #fff;
     margin-top: 0;
@@ -271,18 +271,18 @@ nav ul li a:hover {
     font-weight: 700;
 }
 
-.sobremi-texto .azul {
+.texto h3 strong {
     color: #68d9ff;
 }
 
-.sobremi-texto p {
+.texto p {
     color: #b3c6e0;
     font-size: 1.25rem;
     margin-bottom: 32px;
     line-height: 1.7;
 }
 
-.sobremi-metricas {
+.metricas {
     display: flex;
     gap: 32px;
     margin-bottom: 24px;
@@ -296,7 +296,7 @@ nav ul li a:hover {
     box-shadow: 0 2px 12px rgba(0,64,128,0.06);
 }
 
-.metrica .valor {
+.metrica strong {
     display: block;
     font-size: 1.5rem;
     color: #68d9ff;
@@ -304,13 +304,13 @@ nav ul li a:hover {
     margin-bottom: 4px;
 }
 
-.metrica .desc {
+.metrica small {
     color: #b3c6e0;
     font-size: 1rem;
     font-weight: 500;
 }
 
-.sobremiboton {
+.texto a {
     background: #68d9ff;
     color: #fff;
     padding: 10px 22px;
@@ -323,11 +323,7 @@ nav ul li a:hover {
     margin-top: 10px;
 }
 
-.sobremiboton:hover {
-    background: #3366cc;
-}
-
-.sobremi-boton:hover {
+.texto a:hover {
     background: #3366cc;
 }
 
@@ -337,7 +333,7 @@ nav ul li a:hover {
     color: #eaeaea;
 }
 
-.educacion-titulo {
+.educacion h2 {
     text-align: center;
     font-size: 3.5rem;
     color: #fff;
