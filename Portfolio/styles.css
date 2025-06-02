@@ -486,3 +486,88 @@ nav ul li a:hover {
     line-height: 1.6;
 }
 
+.tecnologias {
+    background: #181f32;
+    padding: 60px 0 40px 0;
+    text-align: center;
+}
+
+.tecnologias h2 {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 0.5rem;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 800;
+}
+
+.tecnologias-subtitulo {
+    color: #7da0fa;
+    font-size: 1.2rem;
+    margin-bottom: 2.5rem;
+}
+
+.tecnologias-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tecnologia-card {
+    background: #151a28;
+    border-radius: 16px;
+    padding: 2rem 1.2rem 1.5rem 1.2rem;
+    box-shadow: 0 2px 16px #0002;
+    border: 1px solid #232b41;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.tecnologia-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 32px #0004;
+}
+
+.icono-tec {
+    font-size: 2.2rem;
+    color: #7da0fa;
+    margin-bottom: 1rem;
+}
+
+.tecnologia-card h3 {
+    color: #fff;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+}
+
+.tecnologia-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tecnologia-card ul li {
+    color: #7da0fa;
+    font-size: 1.05rem;
+    margin-bottom: 0.5rem;
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+}
+
+@media (max-width: 900px) {
+    .tecnologias-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+}
+@media (max-width: 600px) {
+    .tecnologias-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
