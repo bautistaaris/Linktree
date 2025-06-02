@@ -824,6 +824,10 @@ button, a, input, textarea, select {
         display: flex;
     }
 
+    .artcaract a {
+        color: #004080;
+    }
+
     .articulo-detalle {
         width: 80vw;
     }
