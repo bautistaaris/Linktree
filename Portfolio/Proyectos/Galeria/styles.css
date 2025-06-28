@@ -1,0 +1,121 @@
+body {
+    background: linear-gradient(135deg, #181818 60%, #3b5bdb 100%);
+    color: #fff;
+    font-family: 'Inter', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 38px;
+    font-size: 2.7rem;
+    letter-spacing: 2px;
+    color: #7da0fa;
+    text-shadow: 0 2px 12px #0006;
+    margin-bottom: 18px;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 38px;
+    max-width: 1400px;
+    margin: 50px auto 0 auto;
+    padding: 0 32px 60px 32px;
+}
+
+.foto {
+    background: linear-gradient(120deg, #232b41 70%, #3b5bdb22 100%);
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 6px 32px #0005, 0 1.5px 0 #3b5bdb44 inset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.22s cubic-bezier(.4,2,.6,1), box-shadow 0.18s;
+    position: relative;
+}
+
+.foto img {
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.25s cubic-bezier(.4,2,.6,1), filter 0.18s;
+    filter: grayscale(10%) brightness(0.97);
+    border-bottom: 2.5px solid #3b5bdb55;
+}
+
+.foto:hover {
+    transform: translateY(-8px) scale(1.035);
+    box-shadow: 0 12px 40px #3b5bdb55, 0 2px 0 #7da0fa44 inset;
+}
+
+.foto:hover img {
+    transform: scale(1.07) rotate(-1deg);
+    filter: grayscale(0%) brightness(1.05);
+}
+
+.foto p {
+    margin: 0;
+    padding: 18px 18px 16px 18px;
+    font-size: 1.13rem;
+    text-align: center;
+    color: #b3c6e0;
+    background: linear-gradient(90deg, #232b41 80%, #3b5bdb22 100%);
+    width: 100%;
+    border-bottom-left-radius: 22px;
+    border-bottom-right-radius: 22px;
+    min-height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foto::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 18px;
+    right: 18px;
+    bottom: 0;
+    height: 4px;
+    border-radius: 2px;
+    background: linear-gradient(90deg, #7da0fa 0%, #3b5bdb 100%);
+    opacity: 0.18;
+    transition: opacity 0.2s;
+}
+
+.foto:hover::after {
+    opacity: 0.5;
+}
+
+@media (max-width: 600px) {
+    .galeria {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 0 2vw 18px 2vw;
+    }
+    .foto img {
+        height: 420px;
+    }
+    .foto {
+        border-radius: 10px;
+    }
+    .foto p {
+        font-size: 0.97rem;
+        padding: 10px 6px 8px 6px;
+        min-height: 36px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .foto::after {
+        left: 4px;
+        right: 4px;
+        height: 3px;
+    }
+}
+
+
